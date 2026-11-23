@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>HookReel Studio | AI video ads for online stores</title>
+<meta name="description" content="Short UGC-style video ads for TikTok, Reels and Facebook, made from your product page. Every ad comes in 3 versions. From $100.">
+<meta property="og:title" content="HookReel Studio | AI video ads for online stores">
+<meta property="og:description" content="Scroll-stopping 15-20 second video ads made from your product page. 3 versions per ad. From $100.">
+<meta property="og:image" content="https://d2ol7oe51mr4n9.cloudfront.net/user_3IeUIgC7yOdz2dT9zRiEiPYgyDX/46effdd2-6798-4587-aa02-b105f0f56a38.jpg">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;800&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#0b0b0d;--card:#141418;--line:#26262d;--text:#f4f4f6;--muted:#a1a1ab;--red:#f64b4b;--red2:#ff6a5c;--radius:16px}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{font-family:Inter,system-ui,-apple-system,Segoe UI,Roboto,sans-serif;background:var(--bg);color:var(--text);line-height:1.55;-webkit-font-smoothing:antialiased}
+a{color:inherit}
+.wrap{max-width:1100px;margin:0 auto;padding:0 20px}
+section{padding:72px 0}
+h1{font-size:clamp(34px,5.6vw,60px);line-height:1.05;font-weight:800;letter-spacing:-.02em}
+h2{font-size:clamp(26px,3.6vw,38px);font-weight:800;letter-spacing:-.01em;margin-bottom:12px}
+.lead{font-size:clamp(17px,2vw,20px);color:var(--muted);max-width:560px}
+.sub{color:var(--muted);margin-bottom:36px;max-width:620px}
+.red{color:var(--red)}
+.btn{display:inline-block;padding:15px 26px;border-radius:999px;font-weight:600;text-decoration:none;font-size:16px;transition:transform .15s,background .15s}
+.btn:hover{transform:translateY(-1px)}
+.btn-primary{background:var(--red);color:#fff}
+.btn-primary:hover{background:var(--red2)}
+.btn-ghost{border:1px solid var(--line);color:var(--text)}
+.btn-ghost:hover{border-color:#44444d}
+/* nav */
+nav{position:sticky;top:0;z-index:10;background:rgba(11,11,13,.85);backdrop-filter:blur(10px);border-bottom:1px solid var(--line)}
+nav .wrap{display:flex;align-items:center;justify-content:space-between;height:64px}
+.logo{font-weight:800;font-size:19px;text-decoration:none}
+.logo span{color:var(--red)}
+nav .btn{padding:10px 18px;font-size:14px}
+/* hero */
+.hero{padding-top:64px}
+.hero .wrap{display:grid;grid-template-columns:1.1fr .9fr;gap:48px;align-items:center}
+.hero .ctas{display:flex;gap:12px;flex-wrap:wrap;margin:30px 0 18px}
+.trust{display:flex;gap:22px;flex-wrap:wrap;color:var(--muted);font-size:14px}
+.trust b{color:var(--text)}
+.phone{position:relative;aspect-ratio:9/16;max-width:320px;margin-left:auto;border-radius:28px;overflow:hidden;border:1px solid var(--line);box-shadow:0 30px 80px rgba(246,75,75,.18)}
+.phone video{width:100%;height:100%;object-fit:cover;display:block}
+.tag{position:absolute;left:12px;top:12px;background:rgba(0,0,0,.65);font-size:12px;padding:5px 10px;border-radius:999px}
+/* work */
+.grid3{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
+.clip{background:var(--card);border:1px solid var(--line);border-radius:var(--radius);overflow:hidden}
+.clip video{width:100%;aspect-ratio:9/16;object-fit:cover;display:block;background:#000}
+.clip p{padding:14px 16px;font-size:14px;color:var(--muted)}
+.clip p b{color:var(--text);display:block;font-size:15px}
+.note{margin-top:18px;font-size:13px;color:var(--muted)}
+/* steps */
+.steps{display:grid;grid-template-columns:repeat(4,1fr);gap:20px}
+.step{background:var(--card);border:1px solid var(--line);border-radius:var(--radius);padding:24px}
+.step .n{font-size:30px;font-weight:800;color:var(--red);line-height:1;margin-bottom:12px}
+.step b{display:block;margin-bottom:6px}
+.step p{color:var(--muted);font-size:15px}
+/* pricing */
+.price{background:var(--card);border:1px solid var(--line);border-radius:var(--radius);padding:30px 26px;display:flex;flex-direction:column}
+.price.pop{border-color:var(--red);position:relative}
+.price .badge{position:absolute;top:-12px;left:26px;background:var(--red);font-size:12px;font-weight:600;padding:4px 10px;border-radius:999px}
+.price h3{font-size:18px;margin-bottom:4px}
+.price .amt{font-size:44px;font-weight:800;margin:10px 0 2px}
+.price .per{color:var(--muted);font-size:14px;margin-bottom:20px}
+.price ul{list-style:none;margin-bottom:26px;flex:1}
+.price li{padding:7px 0;border-top:1px solid var(--line);font-size:15px}
+.price li:first-child{border-top:0}
+.price li::before{content:"✓";color:var(--red);margin-right:10px;font-weight:700}
+.price .btn{text-align:center}
+/* sample */
+.sample{background:linear-gradient(135deg,#1a0d0f,#141418);border:1px solid #3a1d20;border-radius:24px;padding:48px;display:grid;grid-template-columns:1.4fr 1fr;gap:30px;align-items:center}
+.sample ol{margin:16px 0 0 20px;color:var(--muted)}
+.sample ol li{margin:6px 0}
+.sample .cta{text-align:center}
+.sample .cta small{display:block;margin-top:12px;color:var(--muted);font-size:13px}
+/* faq */
+details{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:18px 20px;margin-bottom:10px}
+summary{cursor:pointer;font-weight:600;list-style:none;display:flex;justify-content:space-between;gap:12px}
+summary::after{content:"+";color:var(--red);font-weight:800}
+details[open] summary::after{content:"–"}
+details p{color:var(--muted);margin-top:10px}
+footer{border-top:1px solid var(--line);padding:36px 0;color:var(--muted);font-size:14px}
+footer .wrap{display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap}
+/* mobile */
+@media (max-width:860px){
+ section{padding:56px 0}
+ .hero .wrap{grid-template-columns:1fr;gap:36px}
+ .phone{margin:0 auto;max-width:260px}
+ .grid3{grid-template-columns:1fr}
+ .work .grid3{grid-template-columns:repeat(3,72%);overflow-x:auto;scroll-snap-type:x mandatory;padding-bottom:8px}
+ .work .clip{scroll-snap-align:start}
+ .steps{grid-template-columns:1fr 1fr}
+ .sample{grid-template-columns:1fr;padding:30px 22px}
+ nav .btn{display:none}
+}
+@media (max-width:480px){.steps{grid-template-columns:1fr}.hero .ctas .btn{width:100%;text-align:center}}
+</style>
+</head>
+<body>
+
+<nav><div class="wrap">
+ <a class="logo" href="#">HookReel<span>.</span></a>
+ <a class="btn btn-primary" href="#sample">Get a free sample</a>
+</div></nav>
+
+<header class="hero"><div class="wrap">
+ <div>
+  <h1>Video ads that stop the scroll. <span class="red">No filming needed.</span></h1>
+  <p class="lead" style="margin-top:20px">We turn your product page into short UGC-style ads for TikTok, Reels and Facebook. Every ad comes in 3 versions with different hooks, so you can test what sells.</p>
+  <div class="ctas">
+   <a class="btn btn-primary" href="#sample">Get a free 10-sec sample</a>
+   <a class="btn btn-ghost" href="#pricing">See pricing</a>
+  </div>
+  <div class="trust"><span><b>3</b> hooks per ad</span><span><b>3-day</b> delivery</span><span><b>2</b> revisions included</span></div>
+ </div>
+ <div class="phone">
+  <video src="https://d2ol7oe51mr4n9.cloudfront.net/user_3IeUIgC7yOdz2dT9zRiEiPYgyDX/141c0a24-4dbd-4047-9c38-24ba4ca755d5.mp4" poster="https://d2ol7oe51mr4n9.cloudfront.net/user_3IeUIgC7yOdz2dT9zRiEiPYgyDX/46effdd2-6798-4587-aa02-b105f0f56a38.jpg" autoplay muted loop playsinline></video>
+  <span class="tag">AI-generated ad</span>
+ </div>
+</div></header>
+
+<section class="work" id="work"><div class="wrap">
+ <h2>Sample ads</h2>
+ <p class="sub">Tap to play with sound. These are made for fictional products to show the style.</p>
+ <div class="grid3">
+  <div class="clip"><video src="https://d2ol7oe51mr4n9.cloudfront.net/user_3IeUIgC7yOdz2dT9zRiEiPYgyDX/f9f8cc20-1c57-4ace-857a-c32a9fcb7bb9.mp4" poster="https://d2ol7oe51mr4n9.cloudfront.net/user_3IeUIgC7yOdz2dT9zRiEiPYgyDX/198b8f53-4615-4852-acb3-3611fe9eabc5.jpg" controls playsinline preload="none"></video><p><b>Jewelry</b>Necklace, unboxing style</p></div>
+  <div class="clip"><video src="https://d2ol7oe51mr4n9.cloudfront.net/user_3IeUIgC7yOdz2dT9zRiEiPYgyDX/141c0a24-4dbd-4047-9c38-24ba4ca755d5.mp4" poster="https://d2ol7oe51mr4n9.cloudfront.net/user_3IeUIgC7yOdz2dT9zRiEiPYgyDX/46effdd2-6798-4587-aa02-b105f0f56a38.jpg" controls playsinline preload="none"></video><p><b>Skincare</b>Face serum, testimonial style</p></div>
+  <div class="clip"><video src="https://d2ol7oe51mr4n9.cloudfront.net/user_3IeUIgC7yOdz2dT9zRiEiPYgyDX/1249ba26-aa20-49f0-86f9-639bb9ee061b.mp4" poster="https://d2ol7oe51mr4n9.cloudfront.net/user_3IeUIgC7yOdz2dT9zRiEiPYgyDX/3814e891-627f-4868-93c5-e79f7576b34c.jpg" controls playsinline preload="none"></video><p><b>Pet products</b>Dog toy, demo style</p></div>
+ </div>
+ <p class="note">All presenters are AI-generated and every ad is labelled as AI-generated.</p>
+</div></section>
+
+<section id="how"><div class="wrap">
+ <h2>How it works</h2>
+ <p class="sub">You send a link. We do the rest.</p>
+ <div class="steps">
+  <div class="step"><div class="n">1</div><b>Send your product link</b><p>Plus a few words about who buys it.</p></div>
+  <div class="step"><div class="n">2</div><b>We write the script</b><p>One ad, three different opening hooks.</p></div>
+  <div class="step"><div class="n">3</div><b>We produce the ads</b><p>15-20 second vertical videos, ready to post.</p></div>
+  <div class="step"><div class="n">4</div><b>You review</b><p>Up to 2 revisions, then you get the final files.</p></div>
+ </div>
+</div></section>
+
+<section id="pricing"><div class="wrap">
+ <h2>Simple pricing</h2>
+ <p class="sub">Order safely through Fiverr. You only pay when you order a package.</p>
+ <div class="grid3">
+  <div class="price">
+   <h3>Starter</h3><div class="amt">$100</div><div class="per">Test one product</div>
+   <ul><li>1 ad in 3 versions</li><li>15-20 seconds, 9:16</li><li>Delivered in 3 days</li><li>2 revisions</li></ul>
+   <a class="btn btn-ghost" href="https://www.fiverr.com/hookreelstudios/create-ai-ugc-video-ads-for-your-online-store-tiktok-and-reels" target="_blank" rel="noopener">Order on Fiverr</a>
+  </div>
+  <div class="price pop">
+   <span class="badge">Best value</span>
+   <h3>Growth</h3><div class="amt">$450</div><div class="per">$90 per ad</div>
+   <ul><li>5 ads, 15 versions</li><li>15-20 seconds, 9:16</li><li>Delivered in 7 days</li><li>2 revisions per ad</li></ul>
+   <a class="btn btn-primary" href="https://www.fiverr.com/hookreelstudios/create-ai-ugc-video-ads-for-your-online-store-tiktok-and-reels" target="_blank" rel="noopener">Order on Fiverr</a>
+  </div>
+  <div class="price">
+   <h3>Scale</h3><div class="amt">$800</div><div class="per">$80 per ad</div>
+   <ul><li>10 ads, 30 versions</li><li>15-20 seconds, 9:16</li><li>Delivered in 10 days</li><li>2 revisions per ad</li></ul>
+   <a class="btn btn-ghost" href="https://www.fiverr.com/hookreelstudios/create-ai-ugc-video-ads-for-your-online-store-tiktok-and-reels" target="_blank" rel="noopener">Order on Fiverr</a>
+  </div>
+ </div>
+</div></section>
+
+<section id="sample"><div class="wrap">
+ <div class="sample">
+  <div>
+   <h2>Not sure yet? Get a free sample.</h2>
+   <p class="sub" style="margin-bottom:0">We make one 10-second ad of your own product, free. No card, no commitment.</p>
+   <ol><li>Email us your product link</li><li>We confirm we can use your product photos</li><li>You get your sample ad within a few days</li></ol>
+  </div>
+  <div class="cta">
+   <a class="btn btn-primary" href="mailto:creation.anc@gmail.com?subject=Free%20sample%20ad&body=Product%20link%3A%20">Request my free sample</a>
+   <small>creation.anc@gmail.com</small>
+  </div>
+ </div>
+</div></section>
+
+<section id="faq" style="padding-top:20px"><div class="wrap">
+ <h2>FAQ</h2>
+ <details><summary>Are the people in the ads real?</summary><p>No. The presenters are AI-generated, and every ad is clearly labelled as AI-generated, as TikTok and Meta require.</p></details>
+ <details><summary>What does "3 versions" mean?</summary><p>The same ad with 3 different opening hooks. Run all three and keep the one that gets the best results.</p></details>
+ <details><summary>Where can I use the ads?</summary><p>TikTok, Instagram Reels, Facebook, YouTube Shorts and your own store. You get vertical 9:16 MP4 files.</p></details>
+ <details><summary>Can you post the ads for me?</summary><p>Yes, posting can be added as an extra.</p></details>
+ <details><summary>How do I pay?</summary><p>All orders go through Fiverr, so your payment is protected until you approve the delivery.</p></details>
+</div></section>
+
+<footer><div class="wrap">
+ <span>© 2026 HookReel Studio</span>
+ <span><a href="mailto:creation.anc@gmail.com">creation.anc@gmail.com</a></span>
+</div></footer>
+
+</body>
+</html>
